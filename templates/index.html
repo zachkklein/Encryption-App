@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="static/styles.css" />
+  </head>
+  <body>
+    <h1>Caesar Cipher</h1>
+    <form method="POST">
+      <label for="plaintext">Text:</label><br />
+      <textarea id="plaintext" name="plaintext" rows="5" cols="30">
+{{ plaintext }}</textarea
+      ><br />
+      <label for="shift">Shift Value:</label><br />
+      <input type="number" id="shift" name="shift" value="{{ shift }}" />
+      <br /><br />
+      <input type="submit" name="action" value="Encrypt" />
+    </form>
+    <p><b>Output:</b></p>
+    <p>{{ encrypted_text }}</p>
+    <p>{{ decrypted_text }}</p>
+  </body>
+</html>

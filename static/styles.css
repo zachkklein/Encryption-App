@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif; /* Basic font stack */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Add some padding for aesthetics */
+}
+
+header {
+  text-align: center; /* Center the title */
+}
+
+h1 {
+  font-size: 2em; /* Increase title size */
+  margin-bottom: 10px; /* Add space after title */
+}
+
+main {
+  display: flex; /* Arrange form and output side-by-side (optional) */
+  flex-direction: column; /* Stack form on top of output (default) */
+  width: 50%; /* Adjust width as needed */
+  margin: 0 auto; /* Center content horizontally */
+}
+
+form {
+  border: 1px solid #ccc; /* Add a border for clarity */
+  border-radius: 5px; /* Round corners for a softer look */
+  padding: 10px; /* Add padding for better spacing */
+}
+
+fieldset {
+  margin-bottom: 15px; /* Add space between fieldsets */
+  padding: 5px; /* Add padding within fieldsets */
+  border: none; /* Remove default fieldset border */
+}
+
+legend {
+  font-weight: bold; /* Emphasize fieldset labels */
+}
+
+label {
+  display: block; /* Make labels on separate lines */
+  margin-bottom: 5px; /* Add space after labels */
+}
+
+input[type="text"],
+textarea {
+  width: 100%; /* Make input fields full width */
+  padding: 5px; /* Add padding for better input experience */
+  border: 1px solid #ccc; /* Add a border for input fields */
+  border-radius: 3px; /* Round corners for input fields */
+}
+
+input[type="submit"] {
+  margin-top: 10px; /* Add space above submit buttons */
+  background-color: #007bff; /* Blue background for submit buttons */
+  color: white; /* White text for submit buttons */
+  padding: 5px 10px; /* Add padding for submit buttons */
+  border: none; /* Remove default button border */
+  border-radius: 3px; /* Round corners for submit buttons */
+  cursor: pointer; /* Indicate clickable action */
+}
+
+input[type="submit"]:hover {
+  background-color: #0069d9; /* Change background color on hover */
+}
+
+.output {
+  margin-top: 20px; /* Add space above output section */
+  border: 1px solid #ccc; /* Add a border for output section */
+  border-radius: 5px; /* Round corners for output section */
+  padding: 10px; /* Add padding for aesthetics */
+}
+
+h2 {
+  margin-bottom: 5px; /* Add space after output heading */
+}
