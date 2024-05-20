@@ -9,6 +9,10 @@ This is a website where you can encrypt text to emojis and then decrypt the emoj
 
 
 
+https://github.com/zachkklein/Encryption-App/assets/106212306/52997d9b-3dfa-4ac0-9f87-c4c19ac62832
+
+
+
 
 
 
