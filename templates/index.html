@@ -15,7 +15,7 @@
                 <label for="plaintext">Enter text to encrypt:</label><br>
                 <textarea id="plaintext" name="plaintext" rows="4" cols="50">{{ plaintext }}</textarea><br>
                 <label for="emoji_password">Enter password:</label><br>
-                <input type="text" id="emoji_password" name="emoji_password" value="{{ emoji_password }}"><br>
+                <input type="password" id="emoji_password" name="emoji_password" value="{{ emoji_password }}"><br>
                 <input type="submit" name="action" value="Encrypt"><br><br>
             </form>
         </section>
@@ -25,7 +25,7 @@
                 <label for="encrypted_text">Enter text to decrypt:</label><br>
                 <textarea id="encrypted_text" name="encrypted_text" rows="4" cols="50">{{ encrypted_text }}</textarea><br>
                 <label for="emoji_password">Enter password:</label><br>
-                <input type="text" id="emoji_password" name="emoji_password" value="{{ emoji_password }}"><br>
+                <input type="password" id="emoji_password" name="emoji_password" value="{{ emoji_password }}"><br>
                 <input type="hidden" name="shift" value="{{ shift }}">
                 <input type="submit" name="action" value="Decrypt"><br><br>
             </form>
@@ -33,7 +33,7 @@
         {% if decrypted_text %}
         <section class="output">
             <h2>Result</h2>
-            <label for="result_text">Decrypted text:</label><br>
+            <label for="result_text">Encrypted/Decrypted text:</label><br>
             <textarea id="result_text" name="result_text" rows="4" cols="50">{{ decrypted_text }}</textarea><br>
         </section>
         {% endif %}

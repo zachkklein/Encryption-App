@@ -1,5 +1,5 @@
 body {
-  font-family: "Suez One", sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
   background-color: #121212;
@@ -44,6 +44,7 @@ label {
 }
 
 input[type="text"],
+input[type="password"],
 textarea {
   width: 100%;
   padding: 10px;
@@ -78,6 +79,7 @@ input[type="submit"]:hover {
   padding: 20px;
   background-color: #1e1e1e;
 }
+
 
 .love{
     font-family: 'Suez One', sans-serif;
