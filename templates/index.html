@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Caesar Cipher</title>
+<head>
+    <title>Emoji Encryptor</title>
     <link rel="stylesheet" href="static/styles.css" />
-  </head>
-  <body>
-    <h1>Caesar Cipher</h1>
-    <form method="POST">
-      <label for="plaintext">Text:</label><br />
-      <textarea id="plaintext" name="plaintext" rows="5" cols="30">
-{{ plaintext }}</textarea
-      ><br />
-      <label for="shift">Shift Value:</label><br />
-      <input type="number" id="shift" name="shift" value="{{ shift }}" />
-      <br /><br />
-      <input type="submit" name="action" value="Encrypt" />
-    </form>
-    <p><b>Output:</b></p>
-    <p>{{ encrypted_text }}</p>
-    <p>{{ decrypted_text }}</p>
-  </body>
+</head>
+<body>
+    <header>
+        <h1>Emoji Encryptor</h1>
+    </header>
+    <main>
+        <section class="encrypt-section">
+            <h2>Encrypt</h2>
+            <form method="POST">
+                <label for="plaintext">Enter text to encrypt:</label><br>
+                <textarea id="plaintext" name="plaintext" rows="4" cols="50">{{ plaintext }}</textarea><br>
+                <label for="emoji_password">Enter password:</label><br>
+                <input type="text" id="emoji_password" name="emoji_password" value="{{ emoji_password }}"><br>
+                <input type="submit" name="action" value="Encrypt"><br><br>
+            </form>
+        </section>
+        <section class="decrypt-section">
+            <h2>Decrypt</h2>
+            <form method="POST">
+                <label for="encrypted_text">Enter text to decrypt:</label><br>
+                <textarea id="encrypted_text" name="encrypted_text" rows="4" cols="50">{{ encrypted_text }}</textarea><br>
+                <label for="emoji_password">Enter password:</label><br>
+                <input type="text" id="emoji_password" name="emoji_password" value="{{ emoji_password }}"><br>
+                <input type="hidden" name="shift" value="{{ shift }}">
+                <input type="submit" name="action" value="Decrypt"><br><br>
+            </form>
+        </section>
+        {% if decrypted_text %}
+        <section class="output">
+            <h2>Result</h2>
+            <label for="result_text">Decrypted text:</label><br>
+            <textarea id="result_text" name="result_text" rows="4" cols="50">{{ decrypted_text }}</textarea><br>
+        </section>
+        {% endif %}
+    </main>
+
+<p class="love">Made with ❤️ in Sherman Oaks, CA</p>
+</body>
 </html>
