@@ -1,10 +1,9 @@
-# Emoji Encrypto
+# Emoji Encryptor
 
 [![License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
 
 
-This is a website where you upload a picture of your sock, and it will find a different sock that matches the closest it can to your sock.
-Using a Kaggle data set, we can connect your sock to a matching sock!
+This is a website where you can encrypt text to emojis and then decrypt the emojis back to text
 
 
 
